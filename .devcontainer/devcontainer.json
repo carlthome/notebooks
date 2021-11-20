@@ -1,0 +1,20 @@
+{
+	"dockerFile": "Dockerfile",
+	"overrideCommand": false,
+	"forwardPorts": [
+		8888
+	],
+	"portsAttributes": {
+		"8888": {
+			"label": "Jupyter",
+			"requireLocalPort": true,
+			"onAutoForward": "ignore"
+		}
+	},
+	"settings": {
+		"python.pythonPath": "/opt/conda/bin/python"
+	},
+	"extensions": [
+		"ms-python.python"
+	]
+}
