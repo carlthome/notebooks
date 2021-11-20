@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-20.04
     container: 
       image: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+      options: --user root
       credentials:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
